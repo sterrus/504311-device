@@ -15,9 +15,9 @@
                 </p>
               </form>
               <div class="user-data">
-                  <a class="enter" href="enter.html">войти</a>
-                  <a class="compare" href="compar.html">сравнить</a>
-                  <a class="basket" href="basket.html">корзина</a>
+                  <a class="enter" href="#">Войти</a>
+                  <a class="compare" href="#">Сравнить</a>
+                  <a class="basket" href="#">Корзина</a>
               </div>
               <nav>
               <ul class="catalog">
@@ -25,68 +25,143 @@
                       <a class="catalog" href="catalog.html"></a>   
                          "Каталог товаров"</li>
                   <li>
-                  <a class="main" href="delivery">Доставка</a>
+                  <a class="main-header" href="delivery">Доставка</a>
                   </li>
                   <li>
-                  <a class="main" href="warranty">Гарантия</a>
+                  <a class="main-header" href="warranty">Гарантия</a>
                   </li>
                   <li>
-                      <a class="main" href="contacts">Контакты</a>
+                      <a class="main-header" href="contacts">Контакты</a>
                   </li>
                    </ul>
               </nav>  
           </div>
      </header>
-      <main class="main">
+      <main class="main-sledes">
+         <!--form верно здесь?  -->
           <section class="slider">
-              <ul class="slider">
-              <li>
-                  <label for="check1"><input type="checkbox" checked></label>
+              <ul class="slides-switches">
+               <li class="slider-radio">
+              <button class="slider-btn"> первый слайд
+                    </button>
               </li>
-              <li>
-                  <label for="check2"><input type="checkbox"></label>
+               <li class="slider-radio">
+              <button class="slider-btn"> второй слайд
+                    </button>
               </li>
-              <li>
-                  <label for="check3"><input type="checkbox"></label>
+                <li class="slider-radio">
+              <button class="slider-btn"> третий слайд
+                    </button>
+                    
               </li>
               </ul>
-              <section>
+              <section class="slider slider-first" id="slide-1">
+             
               <img src="img/1.png" width="" height="" alt="самая длинная палка для селфи">
-                  <div>
-                  <span class=slaid>1</span>
-                      <h2>
-                      Делай селфи,<br>
+                  <div class="description">
+                  <span class="slider-number">первый слайд</span>
+                      <h2 class="title">
+                          Делай селфи,
                           как Бен Стиллер!
                       </h2>
                       <p>
-                          Самая длинная палка для селфи доступна в нашем магазине.</p>
+                         Самая длинная палка для селфи доступна в нашем магазине.</p>
                       <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                      <a class="device" href=".html">Подробнее</a>
+                      <a class="device" href="#">Подробнее</a>
                       <ul class="features">
                       <li>
-                        <p>8.5 <br>
-                         Длина палки</p>  
+                        <span class="features-value">8.5 м</span>
+                         <span class="features-type"> Длина палки</span>  
                           </li>
                            <li>
-                        <p>5 кг <br>
-                         Вес палки</p>  
+                        <span class="features-value">5 кг</span>
+                         <span class="features-type"> Вес палки</span> 
+                        
                           </li>
                            <li>
-                        <p>Карбон <br>
-                         Материал</p>  
+                        <span class="features-value">Карбонг</span>
+                         <span class="features-type"> Материал</span> 
+                          </li>
+                      </ul>  
+                  </div>
+              </section>
+                <!--у меня пока нет инфы что будет во втором и 3 слайде-->
+                 <section class="slider slider-second" id="slide-2">
+             
+              <img src="img/2.png" width="" height="" alt="самая длинная палка для селфи">
+                  <div class="description">
+                  <span class="slider-nember">второй слайд</span>
+                      <h2 class="title">
+                          Делай селфи,
+                          как Бен Стиллер!
+                      </h2>
+                      <p>
+                         Самая длинная палка для селфи доступна в нашем магазине.</p>
+                      <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                      <a class="device" href="#">Подробнее</a>
+                      <ul class="features">
+                      <li>
+                        <span class="features-value">8.5 м</span>
+                         <span class="features-type"> Длина палки</span>  
+                          </li>
+                           <li>
+                        <span class="features-value">5 кг</span>
+                         <span class="features-type"> Вес палки</span> 
+                        
+                          </li>
+                           <li>
+                        <span class="features-value">Карбонг</span>
+                         <span class="features-type"> Материал</span> 
+                          </li>
+                      </ul>  
+                  </div>
+              </section>
+                 <section class="slider slider-third" id="slide-3">
+             
+              <img src="img/3.png" width="" height="" alt="самая длинная палка для селфи">
+                  <div class="description">
+                  <span class="slider-nember">третий слайд</span>
+                      <h2 class="title">
+                          Делай селфи,
+                          как Бен Стиллер!
+                      </h2>
+                      <p>
+                         Самая длинная палка для селфи доступна в нашем магазине.</p>
+                      <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                      <a class="device" href="#">Подробнее</a>
+                      <ul class="features">
+                      <li>
+                        <span class="features-value">8.5 м</span>
+                         <span class="features-type"> Длина палки</span>  
+                          </li>
+                           <li>
+                        <span class="features-value">5 кг</span>
+                         <span class="features-type"> Вес палки</span> 
+                        
+                          </li>
+                           <li>
+                        <span class="features-value">Карбонг</span>
+                         <span class="features-type"> Материал</span> 
                           </li>
                       </ul>  
                   </div>
               </section>
               
               <section class="container-items">
-              <a class="" href="">
+              <a class="" href="#">
                   
                   <img src="" alt="virtual">
                   <p>Виртуальная реальнсть</p>
-                  </a>
-                  <!--добавить ещё-->
+                  </a>      
               </section>
+               <section class="container-items">
+              <a class="" href="#">
+                  
+                  <img src="" alt="virtual">
+                  <p>Моноподы</p>
+                  </a>      
+              </section>
+              
               
               <section class="service">
                   <ul class="service">
@@ -95,16 +170,23 @@
                   <li>Кредит</li>
                   </ul>  
                   
+                  
+                
                   <section class="delivery">
                       <h2>Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                       </p>
                   </section>
                   
-                  <section class="partners">
-                  <img src="img/" >
-                  <!--ещё компании-->
-                  </section>
+                  <section class="brands">
+                      <ul>
+                          <li><img src="#"alt="Dji"></li>
+                          <li><img src="#"alt="Spgadgets"></li>
+                          <li><img src="#"alt="GoPro"></li>
+                          <li><img src="#"alt="Vive"></li>
+
+                      </ul>
+        </section>
                   <section class="company">
                       <section class="about-us">
                       <h2>О нас</h2>
@@ -115,7 +197,7 @@
                           <li><b>Автотрейдинг</b></li>
                            <li><b>ЖелДорЭкспедиция</b></li>
                          </ul>
-                          <a class="device" href=".html">  <!-куда ссылку направить?-->
+                          <a class="device" href="#">  
                           Подробнее о нас
                           </a>    
                       </section>
@@ -123,8 +205,10 @@
                           <h2>Котакты</h2>
                       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                       </p>
-                          <!--как улчше оформить--ещё карта?-->
-                        <a class="device">Напишите нам</a>
+                          
+                        <a class="device" href="#">
+                          Напишите нам
+                          </a>
                      </section>
                       
                   </section>
@@ -133,21 +217,37 @@
 
           </section>
 
- <!--   нормально что так много section?-->   
+ 
       </main>
-    <footer class="footer">
-        <div class="footer-us">
-        <a>Device</a>
-            <p>г. Москва, ул. Строителей, 15 </p>
+    <footer>
+        <div class="footer-top">
+        <span class="logo-footer">Device</span>
+           <ul class="footer-user-menu">
+               <li><a href="#">Войти</a></li>
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+          </ul>
         </div>
-        <div class="footer">
-        <a href="">Доставка</a>
-        <a href="">Гарантия</a> 
+        <div class="footer-middle">
+        <p>г.Москва, ул.Строителей, 15</p>
+        <ul class="footer-site-menu">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <p>Тел.: +7(495)495-95-95</p>
         </div>
-      <!--как лучше оформить футер? табицей?-->
-      
-      </footer>
-  
+        <div class="footer-bottom">
+         <ul class="social-buttons">
+            <li><a href="#" social-btn-facebook>Facebook</a></li>
+            <li><a href="#" social-btn-instagram>Instagram</a></li>
+            <li><a href="#" social-btn-twitter>Twitter</a></li>
+        </ul>
+        <p class="copyright">
+            <span clas="icon">HTML Academy</span>
+        </p>
+        </div>
+     </footer>
 
   </body>
 </html>
