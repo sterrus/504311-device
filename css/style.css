@@ -1,0 +1,69 @@
+body{
+    min-width: 1240px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Open Sans Light","Arial",sans-serif;
+    color: #464646;
+}
+.index_container{
+   position: relative;
+    min-height: 265px;
+    margin-top: 40px;
+    padding-top: 34px;
+    background-color: #f7e296;.
+    
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+.div{ 
+    display:block;
+}
+
+.slider{
+ position: relative;
+    min-height: 495px;
+    width: 1160px;
+    margin: 0 auto;
+}
+}
+.catalog{
+    position: absolute;
+    right: 84px;
+    bottom: 273px;
+    z-index: 3;
+    padding-left: 0;
+    font-size: 0;
+    
+    
+}
+.user-data{
+    float: right;
+    width: 500px;
+    margin-top: 6px;
+}
+h2{
+font-size: 47px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: #000;
+}
+p{
+    font-size: 14px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: #000;
+    
+}
+device a{
+        font-size: 18px;
+    line-height: 22px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    vertical-align: top;
+    color: #000;
+}
+.brands{
+    margin-bottom: 95px;
+    font-size: 0;
+    width: 1160px;
+    margin: 0 auto;
+}
