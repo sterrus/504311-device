@@ -29,7 +29,7 @@ body{
     width: 1160px;
     margin: 0 auto;
 }
-.site-catalog-items{
+site-catalog-items{
     width: 273px;
     margin-right: 268px;
     margin-left: -1px;
@@ -69,7 +69,26 @@ li {
     letter-spacing: .012em;
 }
 
-
+.drop-dowm-menu{
+    position: absolute;
+    direction: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0;
+    list-style: none;
+    visibility: visible;
+    background-color: rgba(247, 226, 150, 1);
+}
+.drop-dowm-item{
+    width: 200px;
+}
+.drop-down-item:nth-child(3n+1){
+    margin-right: 40px;
+}
+.drop-down-item:last-child{
+    margin-right: 200px;
+}
 .name{
     position: absolute;
     top: -30px;
