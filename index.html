@@ -3,28 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet" href="outline.css">
+    <link rel="stylesheet"  href="css/style.css">
   </head>
   <body>
        <header class="index_container">
           <div class="container">
               <a class="name">Device</a>
-              <form>
-              <p>
-                  <input type="search" name="search" placeholder="Поиск по сайту" method="post">
-                  <input type="submit" name="submit" value="Найти">
-                </p>
+              <div class="user-navigation">
+              <form class="search form" action="#" method="post">         
+                  <input type="search" name="search" placeholder="Поиск по сайту" required>
+                  <button type="submit" name="submit" value="Найти"> </button>   
               </form>
               <div class="user-data">
                   <a class="enter" href="#">Войти</a>
                   <a class="compare" href="#">Сравнить</a>
                   <a class="basket" href="#">Корзина</a>
               </div>
+           </div>
               <nav>
               <ul class="catalog">
-                  <li>
+                  <li class="site-catalog-items">
                       <a class="catalog" href="catalog.html"></a>   
-                         "Каталог товаров"</li>
+                         "Каталог товаров"
+                         
+                         <ul class="drop-down-menu">
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </ul>                     
                   <li>
                   <a class="main-header" href="delivery">Доставка</a>
                   </li>
@@ -38,22 +55,23 @@
               </nav>  
           </div>
      </header>
-      <main class="main-slides">
-         <!--form верно здесь?  -->
-          <section class="slider">
-              <ul class="slides-switches">
-               <li class="slider-radio">
-              <button class="slider-btn"> первый слайд
-                    </button>
+      <main class="main-index">
+       <h1 class="visually-hiden">Интернет магазин Device</h1>
+          <section class="slider-container">
+             <h2 class="visualli-hidden">Галерея товаров</h2>
+              <ul class="slides-btn">
+               <li>
+              <label for="btn-1">
+                    </label>
               </li>
-               <li class="slider-radio">
-              <button class="slider-btn"> второй слайд
-                    </button>
+                <li>
+              <label for="btn-2">
+                    </label>
               </li>
-                <li class="slider-radio">
-              <button class="slider-btn"> третий слайд
-                    </button>
-                    
+       
+               <li>
+              <label for="btn-2">
+                    </label>
               </li>
               </ul>
               <section class="slider slider-first" id="slide-1">
@@ -62,7 +80,7 @@
                   <div class="description">
                   <span class="slider-number">первый слайд</span>
                       <h2 class="title">
-                          Делай селфи,
+                          Делай селфи,<br>
                           как Бен Стиллер!
                       </h2>
                       <p>
@@ -86,18 +104,17 @@
                       </ul>  
                   </div>
               </section>
-                <!--у меня пока нет инфы что будет во втором и 3 слайде-->
+               
                  <section class="slider slider-second" id="slide-2">
              
               <img src="img/slider-2.jpg" width="345" height="485" alt="самая длинная палка для селфи">
                   <div class="description">
-                  <span class="slider-nember">второй слайд</span>
+                  <span class="slider-number">второй слайд</span>
                       <h2 class="title">
-                          Делай селфи,
-                          как Бен Стиллер!
+                          Худеем <br>
+                          правильно!
                       </h2>
-                      <p>
-                         Самая длинная палка для селфи доступна в нашем магазине.</p>
+                      <p>Мотивирущие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                       <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                       <a class="device" href="#">Подробнее</a>
                       <ul class="features">
@@ -106,14 +123,11 @@
                          <span class="features-type"> Длина палки</span>  
                           </li>
                            <li>
-                        <span class="features-value">5 кг</span>
-                         <span class="features-type"> Вес палки</span> 
+                        <span class="features-value">48 часов</span>
+                         <span class="features-type"> Без подзарядки палки</span> 
                         
                           </li>
-                           <li>
-                        <span class="features-value">Карбонг</span>
-                         <span class="features-type"> Материал</span> 
-                          </li>
+                           
                       </ul>  
                   </div>
               </section>
@@ -121,83 +135,88 @@
              
               <img src="img/slider-3.jpg" width="526" height="334" alt="самая длинная палка для селфи">
                   <div class="description">
-                  <span class="slider-nember">третий слайд</span>
+                  <span class="slider-number">третий слайд</span>
                       <h2 class="title">
-                          Делай селфи,
-                          как Бен Стиллер!
+                         Порхает как бабочка,жалит как пчела!
                       </h2>
                       <p>
-                         Самая длинная палка для селфи доступна в нашем магазине.</p>
+                         Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
                       <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                       <a class="device" href="#">Подробнее</a>
                       <ul class="features">
                       <li>
-                        <span class="features-value">8.5 м</span>
-                         <span class="features-type"> Длина палки</span>  
+                        <span class="features-value">800 м</span>
+                         <span class="features-type"> Дальность полета</span>  
                           </li>
                            <li>
-                        <span class="features-value">5 кг</span>
-                         <span class="features-type"> Вес палки</span> 
+                        <span class="features-value">50 м</span>
+                         <span class="features-type"> Радиус поражения</span> 
                         
                           </li>
-                           <li>
-                        <span class="features-value">Карбонг</span>
-                         <span class="features-type"> Материал</span> 
-                          </li>
+                          
                       </ul>  
                   </div>
               </section>
               
-              <section class="container-items">
-              <a class="" href="#">
+              <section class="popular containers">
+              <h2 class="visually-hidden">Популярные товары</h2>
+              <ul class="popular-items">
+              <li class="popular-item">
+              <a class="device-1" href="#">
+              <img src="img/popular-1.svg" alt="Виртуальная реальнсть">
+                  </a> 
+                   <p> Виртуальная реальнсть</p>
+                  </li>  
+                    
+             <li class="popular-item">
+             <a class="device-2" href="#">
                   
-                  <img src="img/popular-1.svg" alt="virtual">
-                  Виртуальная реальнсть
-                  </a>      
-              </section>
-               <section class="container-items">
-              <a class="" href="#">
-                  
-                  <img src="img/popular-2.svg" alt="virtual">
+                  <img src="img/popular-2.svg" alt="Моноподы для селфи">
                   <p>Моноподы для селфи</p>
                   </a>      
-              </section>
-                   <section class="container-items">
-              <a class="" href="#">
+                  </li>
+                   <li class="popular-item">
+                <a class="device-3" href="#">
                   
                   <img src="img/popular-3.svg" alt="virtual">
                   <p>Экшен-камеры</p>
                   </a>      
-              </section>
-                   <section class="container-items">
-              <a class="" href="#">
+                  </li>
+                   <li class="popular-item">
+              <a class="device-4" href="#">
                   
-                  <img src="img/popular-4.svg" alt="virtual">
+                  <img src="img/popular-4.svg" alt="Фитнес-браслеты">
                   <p>Фитнес-браслеты</p>
                   </a>      
-              </section>
-                   <section class="container-items">
-              <a class="" href="#">
-                  
-                  <img src="img/popular-5.svg" alt="virtual">
+              </li>
+                   <li class="popular-item">
+              <a class="device-5" href="#">
+                  <img src="img/popular-5.svg" alt="Умные часы">
                   <p>Умные часы</p>
                   </a>      
-              </section>
-                   <section class="container-items">
-              <a class="" href="#">
+              </li>
+                   <li class="popular-item">
+              <a class="device-6" href="#">
                   
-                  <img src="img/popular-6.svg" alt="virtual">
+                  <img src="img/popular-6.svg" alt="Квадрокоптер">
                   <p>Квадрокоптер</p>
-                  </a>      
+                  </a>   
+                  </li> 
+        </ul>  
               </section>
+              
           
               
-              <section class="service">
+              <section class="services">
+                 <div class="main-and-sidebar-wrapper">
                   <ul class="service">
                   <li> Доставка</li>
                    <li>Гарантия</li>
                   <li>Кредит</li>
-                  </ul>  
+                  </ul>
+                     </div>
+                  </section>
+                  
                   
                   
                 
@@ -231,10 +250,11 @@
                           </a>    
                       </section>
                       <section class="contacts">
-                         <img src="img/map">
+                         
                           <h2>Котакты</h2>
                       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                       </p>
+                         <img src="img/map">
                           
                         <a class="device" href="#">
                           Напишите нам
@@ -245,11 +265,9 @@
              
               </section>
 
-          </section>
-
  
       </main>
-    <footer>
+    <footer class="footer-navigation">
         <div class="footer-top">
         <span class="logo-footer">Device</span>
            <ul class="footer-user-menu">
